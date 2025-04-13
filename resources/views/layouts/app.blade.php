@@ -56,7 +56,7 @@
                     <a href="{{ route('home') }}" class="flex items-center">
                         <img src="{{ asset('images/university_logo.png') }}" alt="University Logo" class="h-10 w-auto">
                     </a>
-                    <a href="{{ route('home') }}" class="flex items-center ml-2">
+                    <a href="{{ route('home') }}" class="flex items-center">
                         <img src="{{ asset('images/department_logo.png') }}" alt="Department Logo" class="h-10 w-auto hidden sm:block">
                         <span class="font-bold text-base sm:text-xl ml-1 sm:ml-3">Катедра Маркетинг</span>
                     </a>

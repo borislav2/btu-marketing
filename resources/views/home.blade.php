@@ -11,6 +11,7 @@
                 <h2 class="text-xl sm:text-3xl font-bold text-blue-900 mb-2">БУРГАСКИ ДЪРЖАВЕН УНИВЕРСИТЕТ</h2>
                 <h2 class="text-lg sm:text-2xl font-bold text-blue-800">„ПРОФ. Д-Р АСЕН ЗЛАТАРОВ"</h2>
             </div>
+            <img src="{{ asset('images/department_logo.png') }}" alt="Лого на катедрата" class="h-20 sm:h-24 w-auto mb-4 sm:mb-0">
         </div>
         <div class="mt-8 bg-blue-50 p-6 rounded-lg shadow-md">
             <h3 class="text-2xl font-semibold text-blue-900 mb-4">Катедра Маркетинг</h3>
