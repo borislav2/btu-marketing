@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+<div class="min-h-screen flex items-center justify-center bg-gray-50 py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
     <div class="max-w-md w-full space-y-8">
         <div>
-            <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+            <h2 class="mt-2 sm:mt-6 text-center text-2xl sm:text-3xl font-extrabold text-gray-900">
                 Вход в системата
             </h2>
         </div>
-        <form class="mt-8 space-y-6" action="{{ route('login') }}" method="POST">
+        <form class="mt-6 sm:mt-8 space-y-6" action="{{ route('login') }}" method="POST">
             @csrf
             <div class="rounded-md shadow-sm -space-y-px">
                 <div>

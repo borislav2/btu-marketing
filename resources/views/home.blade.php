@@ -1,17 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="bg-white shadow-lg rounded-lg p-6">
-    <!-- Приветстваща секция -->
-    <section id="welcome" class="mb-12 text-center">
-        <div class="flex justify-center items-center space-x-6 mb-6">
-            <img src="{{ asset('images/university_logo.png') }}" alt="Университетско лого" class="h-24 w-auto">
+<div class="bg-white shadow-lg rounded-lg p-4 sm:p-6">
+    <!-- Welcome section -->
+    <section id="welcome" class="mb-8 sm:mb-12 text-center">
+        <div class="flex flex-col sm:flex-row justify-center items-center sm:space-x-6 mb-6">
+            <img src="{{ asset('images/university_logo.png') }}" alt="Университетско лого" class="h-20 sm:h-24 w-auto mb-4 sm:mb-0">
             <div>
-                <h1 class="text-4xl font-bold text-blue-900 mb-4">Добре дошли в</h1>
-                <h2 class="text-3xl font-bold text-blue-900 mb-2">БУРГАСКИ ДЪРЖАВЕН УНИВЕРСИТЕТ</h2>
-                <h2 class="text-2xl font-bold text-blue-800">„ПРОФ. Д-Р АСЕН ЗЛАТАРОВ"</h2>
+                <h1 class="text-2xl sm:text-4xl font-bold text-blue-900 mb-2 sm:mb-4">Добре дошли в</h1>
+                <h2 class="text-xl sm:text-3xl font-bold text-blue-900 mb-2">БУРГАСКИ ДЪРЖАВЕН УНИВЕРСИТЕТ</h2>
+                <h2 class="text-lg sm:text-2xl font-bold text-blue-800">„ПРОФ. Д-Р АСЕН ЗЛАТАРОВ"</h2>
             </div>
-            <img src="{{ asset('images/department_logo.png') }}" alt="Лого на катедрата" class="h-24 w-auto">
         </div>
         <div class="mt-8 bg-blue-50 p-6 rounded-lg shadow-md">
             <h3 class="text-2xl font-semibold text-blue-900 mb-4">Катедра Маркетинг</h3>
@@ -40,13 +39,13 @@
     </section>
 
     <section id="leadership" class="mb-8">
-        <h2 class="text-3xl font-bold text-blue-900 mb-6 border-b-2 border-yellow-400 pb-2">Ръководство</h2>
-        <div class="bg-gray-50 rounded-lg p-6 flex flex-col md:flex-row gap-6 items-center md:items-start shadow-md">
+        <h2 class="text-2xl sm:text-3xl font-bold text-blue-900 mb-4 sm:mb-6 border-b-2 border-yellow-400 pb-2">Ръководство</h2>
+        <div class="bg-gray-50 rounded-lg p-4 sm:p-6 flex flex-col md:flex-row gap-6 items-center md:items-start shadow-md">
             <img src="{{ asset('images/staff/hristina_mihaleva.png') }}" 
                  alt="доц. д-р Христина Михалева" 
-                 class="w-48 h-48 object-cover rounded-full border-4 border-blue-900">
+                 class="w-36 h-36 sm:w-48 sm:h-48 object-cover rounded-full border-4 border-blue-900">
             <div>
-                <h3 class="text-2xl font-bold text-blue-900 mb-2">доц. д-р Христина Михалева</h3>
+                <h3 class="text-xl sm:text-2xl font-bold text-blue-900 mb-2">доц. д-р Христина Михалева</h3>
                 <p class="text-lg font-semibold text-blue-800 mb-4">Ръководител катедра</p>
                 <div class="space-y-2 text-gray-700">
                     <p class="flex items-center">
