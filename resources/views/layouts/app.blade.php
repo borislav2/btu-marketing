@@ -25,6 +25,9 @@
                 <!-- Навигационни връзки -->
                 <div class="flex items-center space-x-4">
                     <a href="{{ route('home') }}" class="hover:bg-blue-800 px-3 py-2 rounded">Начало</a>
+                    <a href="{{ route('staff') }}" class="hover:bg-blue-800 px-3 py-2 rounded">
+                        <i class="fas fa-users mr-1"></i> Академичен състав
+                    </a>
                     <a href="{{ route('events.index') }}" class="hover:bg-blue-800 px-3 py-2 rounded">
                         <i class="fas fa-calendar-alt mr-1"></i> Събития
                     </a>
@@ -63,7 +66,7 @@
     </main>
 
     <!-- Футър -->
-    <footer class="bg-blue-900 text-white mt-8 absolute bottom-0 w-full">
+    <footer class="bg-blue-900 text-white mt-8 w-full">
         <div class="max-w-7xl mx-auto px-4 py-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
