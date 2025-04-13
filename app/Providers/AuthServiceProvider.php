@@ -25,7 +25,7 @@ class AuthServiceProvider extends ServiceProvider
         Gate::define('access-admin', function ($user) {
             return $user->isAdmin() || $user->isTeacher();
         });
-        Gate::define('teacher', function (User $user) {
+        Gate::define('access-teacher', function (User $user) {
             return $user->isTeacher();
         });
     }
