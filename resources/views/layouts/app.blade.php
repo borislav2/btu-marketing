@@ -23,35 +23,45 @@
                     </a>
                 </div>
                 <!-- Навигационни връзки -->
-                <div class="flex items-center space-x-4">
-                    <a href="{{ route('home') }}" class="hover:bg-blue-800 px-3 py-2 rounded">Начало</a>
-                    <a href="{{ route('staff') }}" class="hover:bg-blue-800 px-3 py-2 rounded">
-                        <i class="fas fa-users mr-1"></i> Академичен състав
+                <div class="flex items-center space-x-6">
+                    <a href="{{ route('home') }}" class="hover:bg-blue-800 px-4 py-2 rounded flex items-center">
+                        <i class="fas fa-home mr-2"></i>
+                        <span>Начало</span>
                     </a>
-                    <a href="{{ route('events.index') }}" class="hover:bg-blue-800 px-3 py-2 rounded">
-                        <i class="fas fa-calendar-alt mr-1"></i> Събития
+                    <a href="{{ route('staff') }}" class="hover:bg-blue-800 px-4 py-2 rounded flex items-center">
+                        <i class="fas fa-users mr-2"></i>
+                        <span>Академичен състав</span>
                     </a>
-                    <a href="{{ route('resources.index') }}" class="hover:bg-blue-800 px-3 py-2 rounded">
-                        <i class="fas fa-file-alt mr-1"></i> Материали
+                    <a href="{{ route('events.index') }}" class="hover:bg-blue-800 px-4 py-2 rounded flex items-center">
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        <span>Събития</span>
                     </a>
-                    <a href="{{ route('news.index') }}" class="hover:bg-blue-800 px-3 py-2 rounded">
-                        <i class="fas fa-newspaper mr-1"></i> Новини
+                    <a href="{{ route('resources.index') }}" class="hover:bg-blue-800 px-4 py-2 rounded flex items-center">
+                        <i class="fas fa-file-alt mr-2"></i>
+                        <span>Материали</span>
+                    </a>
+                    <a href="{{ route('news.index') }}" class="hover:bg-blue-800 px-4 py-2 rounded flex items-center">
+                        <i class="fas fa-newspaper mr-2"></i>
+                        <span>Новини</span>
                     </a>
                     @auth
                         @if(auth()->user()->isTeacher() || auth()->user()->isAdmin())
-                            <a href="/admin" class="hover:bg-blue-800 px-3 py-2 rounded">
-                                <i class="fas fa-user-shield mr-1"></i> Админ Панел
+                            <a href="/admin" class="hover:bg-blue-800 px-4 py-2 rounded flex items-center">
+                                <i class="fas fa-user-shield mr-2"></i>
+                                <span>Админ Панел</span>
                             </a>
                         @endif
                         <form method="POST" action="{{ route('logout') }}" class="inline">
                             @csrf
-                            <button type="submit" class="hover:bg-blue-800 px-3 py-2 rounded">
-                                <i class="fas fa-sign-out-alt mr-1"></i> Изход
+                            <button type="submit" class="hover:bg-blue-800 px-4 py-2 rounded flex items-center">
+                                <i class="fas fa-sign-out-alt mr-2"></i>
+                                <span>Изход</span>
                             </button>
                         </form>
                     @else
-                        <a href="{{ route('login') }}" class="hover:bg-blue-800 px-3 py-2 rounded">
-                            <i class="fas fa-sign-in-alt mr-1"></i> Вход
+                        <a href="{{ route('login') }}" class="hover:bg-blue-800 px-4 py-2 rounded flex items-center">
+                            <i class="fas fa-sign-in-alt mr-2"></i>
+                            <span>Вход</span>
                         </a>
                     @endauth
                 </div>
