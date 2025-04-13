@@ -170,6 +170,23 @@
                     </p>
                 </div>
             </div>
+            <div class="bg-gray-50 rounded-lg p-4 text-center hover:shadow-lg transition-shadow">
+                <img src="{{ asset('images/staff/alexandar_angelov.png') }}" 
+                     alt="ас. д-р Александър Ангелов" 
+                     class="w-32 h-32 object-cover rounded-full mx-auto mb-4 border-2 border-blue-900">
+                <h3 class="text-lg font-semibold text-blue-900">ас. д-р Александър Ангелов</h3>
+                <p class="text-gray-600 italic mb-2">Асистент</p>
+                <div class="text-sm text-gray-700 space-y-1">
+                    <p class="flex items-center justify-center"><i class="fas fa-building w-5"></i> Кабинет: 232 ФОН</p>
+                    <p class="flex items-center justify-center"><i class="fas fa-phone w-5"></i> 0879 104 419</p>
+                    <p class="flex items-center justify-center">
+                        <i class="fas fa-envelope w-5"></i>
+                        <a href="mailto:alexander.k.angelov95@gmail.com" class="text-blue-600 hover:text-blue-800">
+                            alexander.k.angelov95@gmail.com
+                        </a>
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 </div>
