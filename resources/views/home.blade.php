@@ -8,7 +8,7 @@
             <img src="{{ asset('images/university_logo.png') }}" alt="Университетско лого" class="h-24 w-auto">
             <div>
                 <h1 class="text-4xl font-bold text-blue-900 mb-4">Добре дошли в</h1>
-                <h2 class="text-3xl font-bold text-blue-900 mb-2">БУРГАСКИ ТЕХНОЛОГИЧЕН УНИВЕРСИТЕТ</h2>
+                <h2 class="text-3xl font-bold text-blue-900 mb-2">БУРГАСКИ ДЪРЖАВЕН УНИВЕРСИТЕТ</h2>
                 <h2 class="text-2xl font-bold text-blue-800">„ПРОФ. Д-Р АСЕН ЗЛАТАРОВ"</h2>
             </div>
             <img src="{{ asset('images/department_logo.png') }}" alt="Лого на катедрата" class="h-24 w-auto">
