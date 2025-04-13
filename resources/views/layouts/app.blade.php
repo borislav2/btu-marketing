@@ -19,11 +19,36 @@
                 display: flex !important;
             }
         }
+        /* Fix for mobile navigation links */
+        @media (max-width: 767px) {
+            .mobile-menu {
+                position: absolute;
+                top: 64px;
+                left: 0;
+                right: 0;
+                background-color: #1e3a8a; /* bg-blue-900 */
+                flex-direction: column;
+                width: 100%;
+                z-index: 50;
+                padding: 0.5rem 0;
+            }
+            .mobile-menu a, .mobile-menu form button {
+                display: flex;
+                align-items: center;
+                padding: 0.75rem 1.5rem;
+                width: 100%;
+            }
+            .mobile-menu a i, .mobile-menu form button i {
+                width: 24px;
+                margin-right: 0.75rem;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-50">
     <!-- Main navigation -->
-    <nav class="bg-blue-900 text-white shadow-lg">
+    <nav class="bg-blue-900 text-white shadow-lg relative">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between h-16">
                 <!-- University and department logos -->
@@ -44,43 +69,43 @@
                 
                 <!-- Navigation links - hidden on mobile until toggled -->
                 <div class="mobile-menu mobile-menu-closed md:flex items-center space-x-1 md:space-x-4">
-                    <a href="{{ route('home') }}" class="block py-2 px-3 hover:bg-blue-800 rounded">
-                        <i class="fas fa-home mr-1 md:mr-2"></i>
+                    <a href="{{ route('home') }}" class="flex items-center hover:bg-blue-800 rounded">
+                        <i class="fas fa-home w-5 text-center md:mr-2"></i>
                         <span>Начало</span>
                     </a>
-                    <a href="{{ route('staff') }}" class="block py-2 px-3 hover:bg-blue-800 rounded">
-                        <i class="fas fa-users mr-1 md:mr-2"></i>
+                    <a href="{{ route('staff') }}" class="flex items-center hover:bg-blue-800 rounded">
+                        <i class="fas fa-users w-5 text-center md:mr-2"></i>
                         <span>Академичен състав</span>
                     </a>
-                    <a href="{{ route('events.index') }}" class="block py-2 px-3 hover:bg-blue-800 rounded">
-                        <i class="fas fa-calendar-alt mr-1 md:mr-2"></i>
+                    <a href="{{ route('events.index') }}" class="flex items-center hover:bg-blue-800 rounded">
+                        <i class="fas fa-calendar-alt w-5 text-center md:mr-2"></i>
                         <span>Събития</span>
                     </a>
-                    <a href="{{ route('resources.index') }}" class="block py-2 px-3 hover:bg-blue-800 rounded">
-                        <i class="fas fa-file-alt mr-1 md:mr-2"></i>
+                    <a href="{{ route('resources.index') }}" class="flex items-center hover:bg-blue-800 rounded">
+                        <i class="fas fa-file-alt w-5 text-center md:mr-2"></i>
                         <span>Материали</span>
                     </a>
-                    <a href="{{ route('news.index') }}" class="block py-2 px-3 hover:bg-blue-800 rounded">
-                        <i class="fas fa-newspaper mr-1 md:mr-2"></i>
+                    <a href="{{ route('news.index') }}" class="flex items-center hover:bg-blue-800 rounded">
+                        <i class="fas fa-newspaper w-5 text-center md:mr-2"></i>
                         <span>Новини</span>
                     </a>
                     @auth
                         @if(auth()->user()->isTeacher() || auth()->user()->isAdmin())
-                            <a href="/admin" class="block py-2 px-3 hover:bg-blue-800 rounded">
-                                <i class="fas fa-user-shield mr-1 md:mr-2"></i>
+                            <a href="/admin" class="flex items-center hover:bg-blue-800 rounded">
+                                <i class="fas fa-user-shield w-5 text-center md:mr-2"></i>
                                 <span>Админ Панел</span>
                             </a>
                         @endif
                         <form method="POST" action="{{ route('logout') }}" class="inline">
                             @csrf
-                            <button type="submit" class="block w-full text-left py-2 px-3 hover:bg-blue-800 rounded">
-                                <i class="fas fa-sign-out-alt mr-1 md:mr-2"></i>
+                            <button type="submit" class="flex items-center w-full text-left hover:bg-blue-800 rounded">
+                                <i class="fas fa-sign-out-alt w-5 text-center md:mr-2"></i>
                                 <span>Изход</span>
                             </button>
                         </form>
                     @else
-                        <a href="{{ route('login') }}" class="block py-2 px-3 hover:bg-blue-800 rounded">
-                            <i class="fas fa-sign-in-alt mr-1 md:mr-2"></i>
+                        <a href="{{ route('login') }}" class="flex items-center hover:bg-blue-800 rounded">
+                            <i class="fas fa-sign-in-alt w-5 text-center md:mr-2"></i>
                             <span>Вход</span>
                         </a>
                     @endauth
@@ -99,11 +124,13 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div>
                     <h3 class="text-lg font-bold mb-2">Контакти</h3>
-                    <p class="text-sm">
-                        <i class="fas fa-map-marker-alt mr-2"></i> гр. Бургас, ул. "Проф. Якимов" 1
+                    <p class="text-sm flex items-center">
+                        <i class="fas fa-map-marker-alt w-5 text-center mr-2"></i>
+                        <span>гр. Бургас, ул. "Проф. Якимов" 1</span>
                     </p>
-                    <p class="text-sm">
-                        <i class="fas fa-phone mr-2"></i> 0882 095 955
+                    <p class="text-sm flex items-center">
+                        <i class="fas fa-phone w-5 text-center mr-2"></i>
+                        <span>0882 095 955</span>
                     </p>
                 </div>
                 <div>
@@ -130,3 +157,9 @@
 
     <script>
         function toggleMenu() {
+            const menu = document.querySelector('.mobile-menu');
+            menu.classList.toggle('mobile-menu-closed');
+        }
+    </script>
+</body>
+</html>
