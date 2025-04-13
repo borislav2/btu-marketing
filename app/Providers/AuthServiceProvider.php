@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Models\News;
+use App\Models\User;
 use App\Models\Event;
 use App\Models\Resource;
 use App\Policies\NewsPolicy;
@@ -15,8 +16,6 @@ class AuthServiceProvider extends ServiceProvider
 {
     protected $policies = [
         News::class => NewsPolicy::class,
-        Event::class => EventPolicy::class,
-        Resource::class => ResourcePolicy::class,
     ];
 
     public function boot()
@@ -25,6 +24,9 @@ class AuthServiceProvider extends ServiceProvider
 
         Gate::define('access-admin', function ($user) {
             return $user->isAdmin() || $user->isTeacher();
+        });
+        Gate::define('teacher', function (User $user) {
+            return $user->isTeacher();
         });
     }
 }
