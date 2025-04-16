@@ -65,12 +65,12 @@
                 <h3 class="text-base sm:text-lg font-semibold text-blue-900">доц. д-р Ивайло Михайлов</h3>
                 <p class="text-gray-600 italic mb-2">Доцент</p>
                 <div class="text-xs sm:text-sm text-gray-700 space-y-1">
-                    <p class="flex items-center justify-center"><i class="fas fa-building w-5"></i> Кабинет: 121А</p>
-                    <p class="flex items-center justify-center"><i class="fas fa-phone w-5"></i> 0899 940 006</p>
+                    <p class="flex items-center justify-center"><i class="fas fa-building w-5"></i> Кабинет 115А</p>
+                    <p class="flex items-center justify-center"><i class="fas fa-phone w-5"></i> 0889 643 066</p>
                     <p class="flex items-center justify-center">
                         <i class="fas fa-envelope w-5"></i>
-                        <a href="mailto:ivaylomihaylov1976@gmail.com" class="text-blue-600 hover:text-blue-800">
-                            ivaylomihaylov1976@gmail.com
+                        <a href="mailto:ivaylo_mihaylov@outlook.com" class="text-blue-600 hover:text-blue-800">
+                            ivaylo_mihaylov@outlook.com
                         </a>
                     </p>
                 </div>
@@ -100,15 +100,15 @@
                 <img src="{{ asset('images/staff/petko_lyapchev.png') }}" 
                      alt="гл. ас. д-р Петко Ляпчев" 
                      class="w-24 h-24 sm:w-32 sm:h-32 object-cover rounded-full mx-auto mb-3 sm:mb-4 border-2 border-blue-900">
-                <h3 class="text-base sm:text-lg font-semibold text-blue-900">гл. ас. д-р Петко Ляпчев</h3>
+                <h3 class="text-base sm:text-lg font-semibold text-blue-900">гл. ас. д-р Петко Янгьозов</h3>
                 <p class="text-gray-600 italic mb-2">Главен асистент</p>
                 <div class="text-xs sm:text-sm text-gray-700 space-y-1">
-                    <p class="flex items-center justify-center"><i class="fas fa-building w-5"></i> Кабинет: 117А</p>
-                    <p class="flex items-center justify-center"><i class="fas fa-phone w-5"></i> 0899 940 143</p>
+                    <p class="flex items-center justify-center"><i class="fas fa-building w-5"></i> Кабинет 115А</p>
+                    <p class="flex items-center justify-center"><i class="fas fa-phone w-5"></i> 0889 643 066</p>
                     <p class="flex items-center justify-center">
                         <i class="fas fa-envelope w-5"></i>
-                        <a href="mailto:petkolqptchev@share.bg" class="text-blue-600 hover:text-blue-800">
-                            petkolqptchev@share.bg
+                        <a href="mailto: petko-yangyozov@uniburgas.bg" class="text-blue-600 hover:text-blue-800">
+                            petko-yangyozov@uniburgas.bg
                         </a>
                     </p>
                 </div>
@@ -122,12 +122,12 @@
                 <h3 class="text-base sm:text-lg font-semibold text-blue-900">ст. ас. д-р Румен Ангелов</h3>
                 <p class="text-gray-600 italic mb-2">Старши асистент</p>
                 <div class="text-xs sm:text-sm text-gray-700 space-y-1">
-                    <p class="flex items-center justify-center"><i class="fas fa-building w-5"></i> Кабинет: 122А</p>
-                    <p class="flex items-center justify-center"><i class="fas fa-phone w-5"></i> 0884 437 912</p>
+                    <p class="flex items-center justify-center"><i class="fas fa-building w-5"></i> Кабинет: 115А</p>
+                    <p class="flex items-center justify-center"><i class="fas fa-phone w-5"></i> 0889 627 272</p>
                     <p class="flex items-center justify-center">
                         <i class="fas fa-envelope w-5"></i>
-                        <a href="mailto:rumen8angelov@gmail.com" class="text-blue-600 hover:text-blue-800">
-                            rumen8angelov@gmail.com
+                        <a href="mailto:rumbeitor@gmail.com" class="text-blue-600 hover:text-blue-800">
+                            rumbeitor@gmail.com
                         </a>
                     </p>
                 </div>
@@ -164,8 +164,8 @@
                     <p class="flex items-center justify-center"><i class="fas fa-phone w-5"></i> 0879 104 419</p>
                     <p class="flex items-center justify-center">
                         <i class="fas fa-envelope w-5"></i>
-                        <a href="mailto:alexander.k.angelov95@gmail.com" class="text-blue-600 hover:text-blue-800">
-                            alexander.k.angelov95@gmail.com
+                        <a href="mailto:office@bvs-entertainment.com" class="text-blue-600 hover:text-blue-800">
+                            office@bvs-entertainment.com
                         </a>
                     </p>
                 </div>
