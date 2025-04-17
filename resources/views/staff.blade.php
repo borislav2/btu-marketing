@@ -19,7 +19,7 @@
                     <p class="flex items-center justify-center">
                         <i class="fas fa-envelope w-5"></i>
                         <a href="mailto:hristinamichaleva@abv.bg" class="text-blue-600 hover:text-blue-800">
-                            hristinamichaleva@abv.bg
+                            ch.michaleva@abv.bg
                         </a>
                     </p>
                 </div>
@@ -120,7 +120,7 @@
                      alt="ст. ас. д-р Румен Ангелов" 
                      class="w-24 h-24 sm:w-32 sm:h-32 object-cover rounded-full mx-auto mb-3 sm:mb-4 border-2 border-blue-900">
                 <h3 class="text-base sm:text-lg font-semibold text-blue-900">ст. ас. д-р Румен Ангелов</h3>
-                <p class="text-gray-600 italic mb-2">Старши асистент</p>
+                <p class="text-gray-600 italic mb-2">Главен асистент</p>
                 <div class="text-xs sm:text-sm text-gray-700 space-y-1">
                     <p class="flex items-center justify-center"><i class="fas fa-building w-5"></i> Кабинет: 115А</p>
                     <p class="flex items-center justify-center"><i class="fas fa-phone w-5"></i> 0889 627 272</p>
@@ -158,7 +158,7 @@
                      alt="ас. д-р Александър Ангелов" 
                      class="w-24 h-24 sm:w-32 sm:h-32 object-cover rounded-full mx-auto mb-3 sm:mb-4 border-2 border-blue-900">
                 <h3 class="text-base sm:text-lg font-semibold text-blue-900">ас. д-р Александър Ангелов</h3>
-                <p class="text-gray-600 italic mb-2">Асистент</p>
+                <p class="text-gray-600 italic mb-2">Главен асистент</p>
                 <div class="text-xs sm:text-sm text-gray-700 space-y-1">
                     <p class="flex items-center justify-center"><i class="fas fa-building w-5"></i> Кабинет: 232 ФОН</p>
                     <p class="flex items-center justify-center"><i class="fas fa-phone w-5"></i> 0879 104 419</p>
