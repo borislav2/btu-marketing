@@ -119,7 +119,7 @@
                 <img src="{{ asset('images/staff/rumen_angelov.png') }}" 
                      alt="ст. ас. д-р Румен Ангелов" 
                      class="w-24 h-24 sm:w-32 sm:h-32 object-cover rounded-full mx-auto mb-3 sm:mb-4 border-2 border-blue-900">
-                <h3 class="text-base sm:text-lg font-semibold text-blue-900">ст. ас. д-р Румен Ангелов</h3>
+                <h3 class="text-base sm:text-lg font-semibold text-blue-900">гл. ас. д-р Румен Ангелов</h3>
                 <p class="text-gray-600 italic mb-2">Главен асистент</p>
                 <div class="text-xs sm:text-sm text-gray-700 space-y-1">
                     <p class="flex items-center justify-center"><i class="fas fa-building w-5"></i> Кабинет: 115А</p>
@@ -157,7 +157,7 @@
                 <img src="{{ asset('images/staff/alexandar_angelov.png') }}" 
                      alt="ас. д-р Александър Ангелов" 
                      class="w-24 h-24 sm:w-32 sm:h-32 object-cover rounded-full mx-auto mb-3 sm:mb-4 border-2 border-blue-900">
-                <h3 class="text-base sm:text-lg font-semibold text-blue-900">ас. д-р Александър Ангелов</h3>
+                <h3 class="text-base sm:text-lg font-semibold text-blue-900">гл. ас. д-р Александър Ангелов</h3>
                 <p class="text-gray-600 italic mb-2">Главен асистент</p>
                 <div class="text-xs sm:text-sm text-gray-700 space-y-1">
                     <p class="flex items-center justify-center"><i class="fas fa-building w-5"></i> Кабинет: 232 ФОН</p>
